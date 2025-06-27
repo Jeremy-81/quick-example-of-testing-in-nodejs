@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:22'
-            args '-v /var/run/docker.sock:/var/run/docker.sock'
-        }
-    }
+    agent any
 
     tools {
         nodejs "nodejs"

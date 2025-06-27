@@ -5814,4 +5814,255 @@ Décompte des objets:  20% (1/5)Décompte des objets:  40% (2/5)Décompte des 
 Compression par delta en utilisant jusqu'à 12 fils d'exécution
 Compression des objets:  33% (1/3)Compression des objets:  66% (2/3)Compression des objets: 100% (3/3)Compression des objets: 100% (3/3), fait.
 Écriture des objets:  33% (1/3)Écriture des objets:  66% (2/3)Écriture des objets: 100% (3/3)Écriture des objets: 100% (3/3), 618 octets | 618.00 Kio/s, fait.
-Total 3 (delta 2), réutilisés 0 (delta 0), réutili
+Total 3 (delta 2), réutilisés 0 (delta 0), réutilisés du pack 0
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git
+   2515050..65ad002  master -> master
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git push origin master [4Pcommit -m "tag"[10Padd .
+[?2004l[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git add .push origin master [4Pcommit -m "tag"
+[?2004l[master 4963a9e] tag
+ 2 files changed, 35 insertions(+), 2 deletions(-)
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git commit -m "tag"[10Padd .push origin master 
+[?2004lÉnumération des objets: 7, fait.
+Décompte des objets:  14% (1/7)Décompte des objets:  28% (2/7)Décompte des objets:  42% (3/7)Décompte des objets:  57% (4/7)Décompte des objets:  71% (5/7)Décompte des objets:  85% (6/7)Décompte des objets: 100% (7/7)Décompte des objets: 100% (7/7), fait.
+Compression par delta en utilisant jusqu'à 12 fils d'exécution
+Compression des objets:  25% (1/4)Compression des objets:  50% (2/4)Compression des objets:  75% (3/4)Compression des objets: 100% (4/4)Compression des objets: 100% (4/4), fait.
+Écriture des objets:  25% (1/4)Écriture des objets:  50% (2/4)Écriture des objets:  75% (3/4)Écriture des objets: 100% (4/4)Écriture des objets: 100% (4/4), 813 octets | 813.00 Kio/s, fait.
+Total 4 (delta 3), réutilisés 0 (delta 0), réutilisés du pack 0
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git
+   65ad002..4963a9e  master -> master
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git add .
+[?2004l[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git commit -m ""f"i"x"
+[?2004l[master ccb6541] fix
+ 1 file changed, 14 insertions(+)
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git psuh [K[K[K[K
+prune   pull    push    
+]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git push origin master 
+[?2004lÉnumération des objets: 5, fait.
+Décompte des objets:  20% (1/5)Décompte des objets:  40% (2/5)Décompte des objets:  60% (3/5)Décompte des objets:  80% (4/5)Décompte des objets: 100% (5/5)Décompte des objets: 100% (5/5), fait.
+Compression par delta en utilisant jusqu'à 12 fils d'exécution
+Compression des objets:  33% (1/3)Compression des objets:  66% (2/3)Compression des objets: 100% (3/3)Compression des objets: 100% (3/3), fait.
+Écriture des objets:  33% (1/3)Écriture des objets:  66% (2/3)Écriture des objets: 100% (3/3)Écriture des objets: 100% (3/3), 494 octets | 494.00 Kio/s, fait.
+Total 3 (delta 2), réutilisés 0 (delta 0), réutilisés du pack 0
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git
+   4963a9e..ccb6541  master -> master
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git push origin master [4Pcommit -m "fix"[10Padd .push origin master [4Pcommit -m "tag"[10Padd .push origin master [4Pcommit -m "tag"[10Padd .[1Ppushcommit -m "tools"add .[K[K[K[K[K[K[K[K[K[Kdocker [16@git push origin mast[C[C[C[4Pcommit -m "fix"push origin master docker [Kcompose down 
+[?2004l[33mWARN[0m[0000] /home/gerardo/Documents/Code/CiCD/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+[1A[1B[0G[?25l[+] Running 0/1
+ [33m⠋[0m Container jenkins  Stopping                                                                                                                                    [34m0.1s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠙[0m Container jenkins  Stopping                                                                                                                                    [34m0.2s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠹[0m Container jenkins  Removing                                                                                                                                    [34m0.3s [0m
+[?25h[1A[1A[0G[?25l[34m[+] Running 1/2[0m
+ [32m✔[0m Container jenkins     [32mRemoved[0m                                                                                                                                  [34m0.3s [0m
+ [33m⠋[0m Network cicd_default  Removing                                                                                                                                 [34m0.1s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container jenkins     [32mRemoved[0m                                                                                                                                  [34m0.3s [0m
+ [33m⠙[0m Network cicd_default  Removing                                                                                                                                 [34m0.2s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container jenkins     [32mRemoved[0m                                                                                                                                  [34m0.3s [0m
+ [32m✔[0m Network cicd_default  [32mRemoved[0m                                                                                                                                  [34m0.2s [0m
+[?25h[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ docker compose down [3@git push origin master[C[3Pdocker compose down[C[K[K[K[K[Kup -d -b[K-bul[Kild
+[?2004l[33mWARN[0m[0000] /home/gerardo/Documents/Code/CiCD/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+Compose can now delegate builds to bake for better performance.
+ To do so, set COMPOSE_BAKE=true.
+[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                                                                                           docker:desktop-linux
+[?25h[1A[0G[?25l[+] Building 0.2s (3/6)                                                                                                                           docker:desktop-linux
+[34m => [jenkins internal] load build definition from Dockerfile                                                                                                      0.0s
+[0m[34m => => transferring dockerfile: 262B                                                                                                                              0.0s
+[0m[34m => [jenkins internal] load metadata for docker.io/jenkins/jenkins:lts                                                                                            0.1s
+[0m[34m => [jenkins internal] load .dockerignore                                                                                                                         0.0s
+[0m[34m => => transferring context: 2B                                                                                                                                   0.0s
+[0m => [jenkins 1/3] FROM docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                      0.2s
+ => => resolve docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                              0.2s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.4s (3/6)                                                                                                                           docker:desktop-linux
+[34m => [jenkins internal] load build definition from Dockerfile                                                                                                      0.0s
+[0m[34m => => transferring dockerfile: 262B                                                                                                                              0.0s
+[0m[34m => [jenkins internal] load metadata for docker.io/jenkins/jenkins:lts                                                                                            0.1s
+[0m[34m => [jenkins internal] load .dockerignore                                                                                                                         0.0s
+[0m[34m => => transferring context: 2B                                                                                                                                   0.0s
+[0m => [jenkins 1/3] FROM docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                      0.3s
+ => => resolve docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                              0.3s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.5s (3/6)                                                                                                                           docker:desktop-linux
+[34m => [jenkins internal] load build definition from Dockerfile                                                                                                      0.0s
+[0m[34m => => transferring dockerfile: 262B                                                                                                                              0.0s
+[0m[34m => [jenkins internal] load metadata for docker.io/jenkins/jenkins:lts                                                                                            0.1s
+[0m[34m => [jenkins internal] load .dockerignore                                                                                                                         0.0s
+[0m[34m => => transferring context: 2B                                                                                                                                   0.0s
+[0m => [jenkins 1/3] FROM docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                      0.5s
+ => => resolve docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                              0.5s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.7s (3/6)                                                                                                                           docker:desktop-linux
+[34m => [jenkins internal] load build definition from Dockerfile                                                                                                      0.0s
+[0m[34m => => transferring dockerfile: 262B                                                                                                                              0.0s
+[0m[34m => [jenkins internal] load metadata for docker.io/jenkins/jenkins:lts                                                                                            0.1s
+[0m[34m => [jenkins internal] load .dockerignore                                                                                                                         0.0s
+[0m[34m => => transferring context: 2B                                                                                                                                   0.0s
+[0m => [jenkins 1/3] FROM docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                      0.6s
+ => => resolve docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                              0.6s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.8s (3/6)                                                                                                                           docker:desktop-linux
+[34m => [jenkins internal] load build definition from Dockerfile                                                                                                      0.0s
+[0m[34m => => transferring dockerfile: 262B                                                                                                                              0.0s
+[0m[34m => [jenkins internal] load metadata for docker.io/jenkins/jenkins:lts                                                                                            0.1s
+[0m[34m => [jenkins internal] load .dockerignore                                                                                                                         0.0s
+[0m[34m => => transferring context: 2B                                                                                                                                   0.0s
+[0m => [jenkins 1/3] FROM docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                      0.8s
+ => => resolve docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                              0.8s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.9s (3/6)                                                                                                                           docker:desktop-linux
+[34m => [jenkins internal] load build definition from Dockerfile                                                                                                      0.0s
+[0m[34m => => transferring dockerfile: 262B                                                                                                                              0.0s
+[0m[34m => [jenkins internal] load metadata for docker.io/jenkins/jenkins:lts                                                                                            0.1s
+[0m[34m => [jenkins internal] load .dockerignore                                                                                                                         0.0s
+[0m[34m => => transferring context: 2B                                                                                                                                   0.0s
+[0m => [jenkins 1/3] FROM docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                      0.8s
+[34m => => resolve docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                              0.8s
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.1s (7/7)                                                                                                                           docker:desktop-linux
+[34m => [jenkins internal] load build definition from Dockerfile                                                                                                      0.0s
+[0m[34m => => transferring dockerfile: 262B                                                                                                                              0.0s
+[0m[34m => [jenkins internal] load metadata for docker.io/jenkins/jenkins:lts                                                                                            0.1s
+[0m[34m => [jenkins internal] load .dockerignore                                                                                                                         0.0s
+[0m[34m => => transferring context: 2B                                                                                                                                   0.0s
+[0m[34m => [jenkins 1/3] FROM docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                      0.8s
+[0m[34m => => resolve docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                              0.8s
+[0m[34m => CACHED [jenkins 2/3] RUN apt-get update && apt-get install -y docker.io                                                                                       0.0s
+[0m[34m => CACHED [jenkins 3/3] RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash -   && apt-get install -y nodejs   && npm install -g npm                     0.0s
+[0m[34m => [jenkins] exporting to image                                                                                                                                  0.1s
+[0m[34m => => exporting layers                                                                                                                                           0.0s
+[0m[34m => => exporting manifest sha256:2e8745a489b2c71a1bd67b6af58f13ae8a097f87ae3c614d3bf20e5e9506d7f5                                                                 0.0s
+[0m[34m => => exporting config sha256:ecf16d5a18ece3b6c74017d635088372475e7b89326cfe40cc6ac24fef199de9                                                                   0.0s
+[0m[34m => => naming to docker.io/library/cicd-jenkins:latest                                                                                                            0.0s
+[0m[34m => => unpacking to docker.io/library/cicd-jenkins:latest                                                                                                         0.0s
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.1s (7/8)                                                                                                                           docker:desktop-linux
+[34m => => transferring dockerfile: 262B                                                                                                                              0.0s
+[0m[34m => [jenkins internal] load metadata for docker.io/jenkins/jenkins:lts                                                                                            0.1s
+[0m[34m => [jenkins internal] load .dockerignore                                                                                                                         0.0s
+[0m[34m => => transferring context: 2B                                                                                                                                   0.0s
+[0m[34m => [jenkins 1/3] FROM docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                      0.8s
+[0m[34m => => resolve docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                              0.8s
+[0m[34m => CACHED [jenkins 2/3] RUN apt-get update && apt-get install -y docker.io                                                                                       0.0s
+[0m[34m => CACHED [jenkins 3/3] RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash -   && apt-get install -y nodejs   && npm install -g npm                     0.0s
+[0m[34m => [jenkins] exporting to image                                                                                                                                  0.1s
+[0m[34m => => exporting layers                                                                                                                                           0.0s
+[0m[34m => => exporting manifest sha256:2e8745a489b2c71a1bd67b6af58f13ae8a097f87ae3c614d3bf20e5e9506d7f5                                                                 0.0s
+[0m[34m => => exporting config sha256:ecf16d5a18ece3b6c74017d635088372475e7b89326cfe40cc6ac24fef199de9                                                                   0.0s
+[0m[34m => => naming to docker.io/library/cicd-jenkins:latest                                                                                                            0.0s
+[0m[34m => => unpacking to docker.io/library/cicd-jenkins:latest                                                                                                         0.0s
+[0m => [jenkins] resolving provenance for metadata file                                                                                                              0.0s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.1s (8/8) FINISHED                                                                                                                  docker:desktop-linux
+[34m => [jenkins internal] load build definition from Dockerfile                                                                                                      0.0s
+[0m[34m => => transferring dockerfile: 262B                                                                                                                              0.0s
+[0m[34m => [jenkins internal] load metadata for docker.io/jenkins/jenkins:lts                                                                                            0.1s
+[0m[34m => [jenkins internal] load .dockerignore                                                                                                                         0.0s
+[0m[34m => => transferring context: 2B                                                                                                                                   0.0s
+[0m[34m => [jenkins 1/3] FROM docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                      0.8s
+[0m[34m => => resolve docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                              0.8s
+[0m[34m => CACHED [jenkins 2/3] RUN apt-get update && apt-get install -y docker.io                                                                                       0.0s
+[0m[34m => CACHED [jenkins 3/3] RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash -   && apt-get install -y nodejs   && npm install -g npm                     0.0s
+[0m[34m => [jenkins] exporting to image                                                                                                                                  0.1s
+[0m[34m => => exporting layers                                                                                                                                           0.0s
+[0m[34m => => exporting manifest sha256:2e8745a489b2c71a1bd67b6af58f13ae8a097f87ae3c614d3bf20e5e9506d7f5                                                                 0.0s
+[0m[34m => => exporting config sha256:ecf16d5a18ece3b6c74017d635088372475e7b89326cfe40cc6ac24fef199de9                                                                   0.0s
+[0m[34m => => naming to docker.io/library/cicd-jenkins:latest                                                                                                            0.0s
+[0m[34m => => unpacking to docker.io/library/cicd-jenkins:latest                                                                                                         0.0s
+[0m[34m => [jenkins] resolving provenance for metadata file                                                                                                              0.0s
+[0m[?25h[1A[1B[0G[?25l[+] Running 2/3
+ [32m✔[0m jenkins               [32mBuilt[0m                                                                                                                                    [34m0.0s [0m
+ [32m✔[0m Network cicd_default  [32mCreated[0m                                                                                                                                  [34m0.0s [0m
+ [33m⠋[0m Container jenkins     Creating                                                                                                                                 [34m0.0s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m jenkins               [32mBuilt[0m                                                                                                                                    [34m0.0s [0m
+ [32m✔[0m Network cicd_default  [32mCreated[0m                                                                                                                                  [34m0.0s [0m
+ [33m⠙[0m Container jenkins     Starting                                                                                                                                 [34m0.1s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m jenkins               [32mBuilt[0m                                                                                                                                    [34m0.0s [0m
+ [32m✔[0m Network cicd_default  [32mCreated[0m                                                                                                                                  [34m0.0s [0m
+ [33m⠹[0m Container jenkins     Starting                                                                                                                                 [34m0.2s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[34m[+] Running 3/3[0m
+ [32m✔[0m jenkins               [32mBuilt[0m                                                                                                                                    [34m0.0s [0m
+ [32m✔[0m Network cicd_default  [32mCreated[0m                                                                                                                                  [34m0.0s [0m
+ [32m✔[0m Container jenkins     [32mStarted[0m                                                                                                                                  [34m0.3s [0m
+[?25h[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ docker compose up -d --build[8Pdown 
+[?2004l[33mWARN[0m[0000] /home/gerardo/Documents/Code/CiCD/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+[1A[1B[0G[?25l[+] Running 0/1
+ [33m⠋[0m Container jenkins  Stopping                                                                                                                                    [34m0.1s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠙[0m Container jenkins  Stopping                                                                                                                                    [34m0.2s [0m
+[?25h^[[A[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠹[0m Container jenkins  Stopping                                                                                                                                    [34m0.3s [0m
+[?25h[1A[1A[0G[?25l[34m[+] Running 1/2[0m
+ [32m✔[0m Container jenkins     [32mRemoved[0m                                                                                                                                  [34m0.4s [0m
+ [33m⠋[0m Network cicd_default  Removing                                                                                                                                 [34m0.0s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container jenkins     [32mRemoved[0m                                                                                                                                  [34m0.4s [0m
+ [33m⠙[0m Network cicd_default  Removing                                                                                                                                 [34m0.1s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container jenkins     [32mRemoved[0m                                                                                                                                  [34m0.4s [0m
+ [33m⠹[0m Network cicd_default  Removing                                                                                                                                 [34m0.2s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container jenkins     [32mRemoved[0m                                                                                                                                  [34m0.4s [0m
+ [32m✔[0m Network cicd_default  [32mRemoved[0m                                                                                                                                  [34m0.3s [0m
+[?25h[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ docker compose down up -d --build
+[?2004l[33mWARN[0m[0000] /home/gerardo/Documents/Code/CiCD/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+Compose can now delegate builds to bake for better performance.
+ To do so, set COMPOSE_BAKE=true.
+[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                                                                                           docker:desktop-linux
+[?25h[1A[0G[?25l[+] Building 0.1s (4/6)                                                                                                                           docker:desktop-linux
+[34m => [jenkins internal] load build definition from Dockerfile                                                                                                      0.0s
+[0m[34m => => transferring dockerfile: 262B                                                                                                                              0.0s
+[0m[34m => [jenkins internal] load metadata for docker.io/jenkins/jenkins:lts                                                                                            0.0s
+[0m[34m => [jenkins internal] load .dockerignore                                                                                                                         0.0s
+[0m[34m => => transferring context: 2B                                                                                                                                   0.0s
+[0m[34m => [jenkins 1/3] FROM docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                      0.0s
+[0m[34m => => resolve docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                              0.0s
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (7/8)                                                                                                                           docker:desktop-linux
+[34m => => transferring dockerfile: 262B                                                                                                                              0.0s
+[0m[34m => [jenkins internal] load metadata for docker.io/jenkins/jenkins:lts                                                                                            0.0s
+[0m[34m => [jenkins internal] load .dockerignore                                                                                                                         0.0s
+[0m[34m => => transferring context: 2B                                                                                                                                   0.0s
+[0m[34m => [jenkins 1/3] FROM docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                      0.0s
+[0m[34m => => resolve docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                              0.0s
+[0m[34m => CACHED [jenkins 2/3] RUN apt-get update && apt-get install -y docker.io                                                                                       0.0s
+[0m[34m => CACHED [jenkins 3/3] RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash -   && apt-get install -y nodejs   && npm install -g npm                     0.0s
+[0m[34m => [jenkins] exporting to image                                                                                                                                  0.0s
+[0m[34m => => exporting layers                                                                                                                                           0.0s
+[0m[34m => => exporting manifest sha256:2e8745a489b2c71a1bd67b6af58f13ae8a097f87ae3c614d3bf20e5e9506d7f5                                                                 0.0s
+[0m[34m => => exporting config sha256:ecf16d5a18ece3b6c74017d635088372475e7b89326cfe40cc6ac24fef199de9                                                                   0.0s
+[0m[34m => => naming to docker.io/library/cicd-jenkins:latest                                                                                                            0.0s
+[0m[34m => => unpacking to docker.io/library/cicd-jenkins:latest                                                                                                         0.0s
+[0m => [jenkins] resolving provenance for metadata file                                                                                                              0.0s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (8/8) FINISHED                                                                                                                  docker:desktop-linux
+[34m => [jenkins internal] load build definition from Dockerfile                                                                                                      0.0s
+[0m[34m => => transferring dockerfile: 262B                                                                                                                              0.0s
+[0m[34m => [jenkins internal] load metadata for docker.io/jenkins/jenkins:lts                                                                                            0.0s
+[0m[34m => [jenkins internal] load .dockerignore                                                                                                                         0.0s
+[0m[34m => => transferring context: 2B                                                                                                                                   0.0s
+[0m[34m => [jenkins 1/3] FROM docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                      0.0s
+[0m[34m => => resolve docker.io/jenkins/jenkins:lts@sha256:f4607803bd1ee4dc91b1695b07d3a04c77b4f575a507ff65375af888e1497662                                              0.0s
+[0m[34m => CACHED [jenkins 2/3] RUN apt-get update && apt-get install -y docker.io                                                                                       0.0s
+[0m[34m => CACHED [jenkins 3/3] RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash -   && apt-get install -y nodejs   && npm install -g npm                     0.0s
+[0m[34m => [jenkins] exporting to image                                                                                                                                  0.0s
+[0m[34m => => exporting layers                                                                                                                                           0.0s
+[0m[34m => => exporting manifest sha256:2e8745a489b2c71a1bd67b6af58f13ae8a097f87ae3c614d3bf20e5e9506d7f5                                                                 0.0s
+[0m[34m => => exporting config sha256:ecf16d5a18ece3b6c74017d635088372475e7b89326cfe40cc6ac24fef199de9                                                                   0.0s
+[0m[34m => => naming to docker.io/library/cicd-jenkins:latest                                                                                                            0.0s
+[0m[34m => => unpacking to docker.io/library/cicd-jenkins:latest                                                                                                         0.0s
+[0m[34m => [jenkins] resolving provenance for metadata file                                                                                                              0.0s
+[0m[?25h[1A[1B[0G[?25l[+] Running 2/3
+ [32m✔[0m jenkins               [32mBuilt[0m                                                                                                                                    [34m0.0s [0m
+ [32m✔[0m Network cicd_default  [32mCreated[0m                                                                                                                                  [34m0.0s [0m
+ [33m⠋[0m Container jenkins     Creating                                                                                                                                 [34m0.0s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m jenkins               [32mBuilt[0m                                                                                                                                    [34m0.0s [0m
+ [32m✔[0m Network cicd_default  [32mCreated[0m                                                                                                                                  [34m0.0s [0m
+ [33m⠙[0m Container jenkins     Starting                                                                                                                                 [34m0.1s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m jenkins               [32mBuilt[0m                                                                                                                                    [34m0.0s [0m
+ [32m✔[0m Network cicd_default  [32mCreated[0m                                                                                                                                  [34m0.0s [0m
+ [33m⠹[0m Container jenkins     Starting                                                                                                                                 [34m0.2s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[34m[+] Running 3/3[0m
+ [32m✔[0m jenkins               [32mBuilt[0m                                                                                                                                    [34m0.0s [0m
+ [32m✔[0m Network cicd_default  [32mCreated[0m                                                                                                                                  [34m0.0s [0m
+ [32m✔[0m Container jenkins     [32mStarted[0m                                                                                                                                  [34m0.3s [0m
+[?25h[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ [7mdocker-compose build jenkins[27m
