@@ -5755,4 +5755,29 @@ Compose can now delegate builds to bake for better performance.
 [0m[34m => => unpacking to docker.io/library/cicd-jenkins:latest                                                                                                         1.3s
 [0m[34m => [jenkins] resolving provenance for metadata file                                                                                                              0.0s
 [0m[?25h[1A[1B[0G[?25l[+] Building 1/1
- [32m✔[0m jenkins  [32mBuilt[0m                                                                                       
+ [32m✔[0m jenkins  [32mBuilt[0m                                                                                                                                                 [34m0.0s [0m
+[?25h[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ docker compose up -d
+[?2004l[33mWARN[0m[0000] /home/gerardo/Documents/Code/CiCD/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+[1A[1B[0G[?25l[+] Running 1/2
+ [32m✔[0m Network cicd_default  [32mCreated[0m                                                                                                                                  [34m0.0s [0m
+ [33m⠋[0m Container jenkins     Creating                                                                                                                                 [34m0.0s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network cicd_default  [32mCreated[0m                                                                                                                                  [34m0.0s [0m
+ [33m⠙[0m Container jenkins     Creating                                                                                                                                 [34m0.1s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network cicd_default  [32mCreated[0m                                                                                                                                  [34m0.0s [0m
+ [33m⠹[0m Container jenkins     Creating                                                                                                                                 [34m0.2s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Network cicd_default  [32mCreated[0m                                                                                                                                  [34m0.0s [0m
+ [32m✔[0m Container jenkins     [32mCreated[0m                                                                                                                                  [34m0.3s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network cicd_default  [32mCreated[0m                                                                                                                                  [34m0.0s [0m
+ [33m⠸[0m Container jenkins     Starting                                                                                                                                 [34m0.4s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Network cicd_default  [32mCreated[0m                                                                                                                                  [34m0.0s [0m
+ [32m✔[0m Container jenkins     [32mStarted[0m                                                                                                                                  [34m0.5s [0m
+[?25h[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ docker compose up -dbuildr build[2P down-[C[C[C[C[C[C[C[C[C[C[C[Cgit push origin master [4Pcommit -m "fix"[10Padd .
+[?2004l[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git add .docker compose up -dbuildr build[2P down-[C[C[C[C[C[C[C[C[C[C[C[Cgit push origin master [4Pcommit -m "fix"[10Padd .commit -m "fix"
+[?2004l[master bcd3461] fix
+ 2 files changed, 1450 insertions(+), 1 deletion(-)
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git commit -m "fix"[10Padd .docker compose up -dbuildr build[2P down-[C[C[C[C

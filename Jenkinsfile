@@ -6,6 +6,11 @@ pipeline {
         }
     }
 
+    tools {
+        nodejs "nodejs"
+        docker "Docker"
+    }
+
     environment {
         IMAGE_NAME = "quick-example"
         IMAGE_TAG = "${BUILD_NUMBER}"
