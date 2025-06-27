@@ -8,6 +8,7 @@ pipeline {
     environment {
         IMAGE_NAME = "quick-example"
         GITHUB_USER = 'jeremy-81'
+        GITHUB_TOKEN = credentials('github-token')
         IMAGE_TAG = "${BUILD_NUMBER}"
         FULL_IMAGE = "${IMAGE_NAME}:${IMAGE_TAG}"
         REPO_URL = 'https://github.com/jeremy-81/quick-example-of-testing-in-nodejs.git'
