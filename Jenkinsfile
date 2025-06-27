@@ -15,9 +15,11 @@ pipeline {
     stages {
          stage('Checkout branch') {
             steps {
-                checkout([$class: 'GitSCM', 
-                          branches: [[name: 'refs/heads/master']], 
-                          userRemoteConfigs: [[url: "${REPO_URL}"]]])
+                sh '''
+                    git clone https://github.com/jeremy-81/quick-example-of-testing-in-nodejs.git
+                    cd quick-example-of-testing-in-nodejs
+                    git checkout master
+                '''
             }
         }
 
