@@ -5,7 +5,7 @@ pipeline {
         IMAGE_NAME = "quick-example"
         DOCKER_REPO = "ghcr.io/jeremy-81"
         GITHUB_USER = "jeremy-81"
-        GITHUB_TOKEN = credentials('Github') // Stocké dans Jenkins -> Credentials
+        GITHUB_TOKEN = credentials('github-token') // Stocké dans Jenkins -> Credentials
     }
 
     stages {
