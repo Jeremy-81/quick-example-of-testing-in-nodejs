@@ -10,7 +10,7 @@ pipeline {
         GITHUB_USER = 'jeremy-81'
         IMAGE_TAG = "${BUILD_NUMBER}"
         FULL_IMAGE = "${IMAGE_NAME}:${IMAGE_TAG}"
-        REPO_URL = 'https://github.com/Jeremy-81/quick-example-of-testing-in-nodejs.git'
+        REPO_URL = 'https://github.com/jeremy-81/quick-example-of-testing-in-nodejs.git'
     }
 
     stages {
