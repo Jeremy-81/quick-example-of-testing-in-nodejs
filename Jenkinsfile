@@ -1,61 +1,46 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:22'
-        }
-    }
+    agent any
 
     environment {
         IMAGE_NAME = "quick-example"
-        DOCKER_REPO = "ghcr.io/jeremy-81"
-        GITHUB_USER = "jeremy-81"
-        GITHUB_TOKEN = credentials('github-token')
+        IMAGE_TAG = "${BUILD_NUMBER}"
+        FULL_IMAGE = "${IMAGE_NAME}:${IMAGE_TAG}"
     }
 
     stages {
-        stage('Installer les dépendances') {
+        stage('Install dependencies') {
             steps {
                 sh 'npm install'
             }
         }
 
-        stage('Exécuter les tests') {
+        stage('Run tests') {
             steps {
                 sh 'npm test'
             }
         }
 
-        stage('Construire l’image Docker') {
+        stage('Build Docker image') {
             steps {
                 script {
-                    env.IMAGE_TAG = "${BUILD_NUMBER}"
-                    env.FULL_IMAGE = "${DOCKER_REPO}/${IMAGE_NAME}:${IMAGE_TAG}"
                     sh "docker build -t ${FULL_IMAGE} ."
                 }
             }
         }
 
-        stage('Pousser l’image Docker') {
-            steps {
-                script {
-                    sh """
-                        echo "${GITHUB_TOKEN}" | docker login ghcr.io -u ${GITHUB_USER} --password-stdin
-                        docker push ${FULL_IMAGE}
-                    """
-                }
+        stage('Push to local Docker registry (optional)') {
+            when {
+                expression { return false }
             }
-        }
-
-        stage('Créer un tag Git') {
             steps {
                 script {
-                    def tag = "v${BUILD_NUMBER}"
-                    sh """
-                        git config user.name "jenkins"
-                        git config user.email "jenkins@local"
-                        git tag ${tag}
-                        git push https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_USER}/quick-example-of-testing-in-nodejs.git ${tag}
-                    """
+                    withCredentials([usernamePassword(credentialsId: 'docker-hub-creds', passwordVariable: 'PASS', usernameVariable: 'USER')]) {
+                        sh """
+                            echo "$PASS" | docker login -u "$USER" --password-stdin
+                            docker tag ${FULL_IMAGE} ${USER}/${IMAGE_NAME}:${IMAGE_TAG}
+                            docker push ${USER}/${IMAGE_NAME}:${IMAGE_TAG}
+                        """
+                    }
                 }
             }
         }
