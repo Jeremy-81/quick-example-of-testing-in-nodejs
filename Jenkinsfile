@@ -12,6 +12,8 @@ pipeline {
 
     environment {
         IMAGE_NAME = "quick-example"
+        GITHUB_USER = 'jeremy-81'
+        GITHUB_TOKEN = credentials('github-token')
         IMAGE_TAG = "${BUILD_NUMBER}"
         FULL_IMAGE = "${IMAGE_NAME}:${IMAGE_TAG}"
         GIT_CREDENTIALS_ID = 'github-token' 
@@ -36,6 +38,18 @@ pipeline {
                 script {
                     sh "docker build -t ${FULL_IMAGE} ."
                 }
+            }
+        }
+
+        stage('Login to GitHub Container') {
+            steps {
+                sh "echo ${GITHUB_TOKEN} | docker login ghcr.io -u ${GITHUB_USER} --password-stdin"
+            }
+        }
+
+        stage('Push Docker Image') {
+            steps {
+                sh "docker push ${FULL_IMAGE}"
             }
         }
 
