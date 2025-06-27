@@ -4280,4 +4280,34 @@ Compose can now delegate builds to bake for better performance.
 [?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
  [32m✔[0m Container jenkins     [32mRemoved[0m                                                                                                                                  [34m0.3s [0m
  [32m✔[0m Network cicd_default  [32mRemoved[0m                                                                                                                                  [34m0.2s [0m
-[?25h[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ docker compose down up -d --build[8Pdown up -ddown up -dbuild -t node-docker:22 -f Dockerfile.jenkins-agent .[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccompose up -d[Kbuild -t node-docker:22 -f Dockerfile.jenkins-agent .[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Pcat /home/gerardo/.ssh/id_ed25519.pub ssh-keygen[Kcat /home/gerardo/.ssh/id_ed25519.pub docker build -t node-docker:22 -f Dockerfile.jenkins-agent .[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccompose up -d[Kbuild -t node-docker:22 -f Dockerfile.jenkins-agent .[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?25h[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ docker compose down up -d --build[8Pdown up -ddown up -dbuild -t node-docker:22 -f Dockerfile.jenkins-agent .[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccompose up -d[Kbuild -t node-docker:22 -f Dockerfile.jenkins-agent .[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Pcat /home/gerardo/.ssh/id_ed25519.pub ssh-keygen[Kcat /home/gerardo/.ssh/id_ed25519.pub docker build -t node-docker:22 -f Dockerfile.jenkins-agent .[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccompose up -d[Kbuild -t node-docker:22 -f Dockerfile.jenkins-agent .[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccompose up -d[Kdown up -ddown up -d --build[8Pdown [Kdocker compose down up -d --build[K[K[K[K[K[K[K[K
+[?2004l[33mWARN[0m[0000] /home/gerardo/Documents/Code/CiCD/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+[1A[1B[0G[?25l[+] Running 1/2
+ [32m✔[0m Network cicd_default  [32mCreated[0m                                                                                                                                  [34m0.0s [0m
+ [33m⠋[0m Container jenkins     Creating                                                                                                                                 [34m0.0s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network cicd_default  [32mCreated[0m                                                                                                                                  [34m0.0s [0m
+ [33m⠙[0m Container jenkins     Starting                                                                                                                                 [34m0.1s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Network cicd_default  [32mCreated[0m                                                                                                                                  [34m0.0s [0m
+ [33m⠹[0m Container jenkins     Starting                                                                                                                                 [34m0.2s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Network cicd_default  [32mCreated[0m                                                                                                                                  [34m0.0s [0m
+ [32m✔[0m Container jenkins     [32mStarted[0m                                                                                                                                  [34m0.3s [0m
+[?25h[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git add .
+[?2004l[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git coù[Kmmit-m[K[K -m ""f"i"x"
+[?2004l[master 1b2d812] fix
+ 3 files changed, 4317 insertions(+), 32 deletions(-)
+ create mode 100644 Dockerfile.jenkins-agent
+ create mode 100644 {
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git push origin master 
+[?2004lÉnumération des objets: 7, fait.
+Décompte des objets:  14% (1/7)Décompte des objets:  28% (2/7)Décompte des objets:  42% (3/7)Décompte des objets:  57% (4/7)Décompte des objets:  71% (5/7)Décompte des objets:  85% (6/7)Décompte des objets: 100% (7/7)Décompte des objets: 100% (7/7), fait.
+Compression par delta en utilisant jusqu'à 12 fils d'exécution
+Compression des objets:  20% (1/5)Compression des objets:  40% (2/5)Compression des objets:  60% (3/5)Compression des objets:  80% (4/5)Compression des objets: 100% (5/5)Compression des objets: 100% (5/5), fait.
+Écriture des objets:  20% (1/5)Écriture des objets:  40% (2/5)Écriture des objets:  60% (3/5)Écriture des objets:  80% (4/5)Écriture des objets: 100% (5/5)Écriture des objets: 100% (5/5), 21.08 Kio | 5.27 Mio/s, fait.
+Total 5 (delta 2), réutilisés 0 (delta 0), réutilisés du pack 0
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git
+   d77d714..1b2d812  master -> master
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git push origin master 
