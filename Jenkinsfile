@@ -1,20 +1,18 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'node:18'
+        }
+    }
 
     environment {
         IMAGE_NAME = "quick-example"
         DOCKER_REPO = "ghcr.io/jeremy-81"
         GITHUB_USER = "jeremy-81"
-        GITHUB_TOKEN = credentials('github-token') // Stocké dans Jenkins -> Credentials
+        GITHUB_TOKEN = credentials('github-token')
     }
 
     stages {
-        stage('Cloner le dépôt') {
-            steps {
-                git url: 'https://github.com/Jeremy-81/quick-example-of-testing-in-nodejs.git', branch: 'main'
-            }
-        }
-
         stage('Installer les dépendances') {
             steps {
                 sh 'npm install'
@@ -54,11 +52,10 @@ pipeline {
                     def tag = "v${BUILD_NUMBER}"
                     sh """
                         git config user.name "jenkins"
-                        git config user.email "jenkins@example.com"
+                        git config user.email "jenkins@local"
                         git tag ${tag}
                         git push https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_USER}/quick-example-of-testing-in-nodejs.git ${tag}
                     """
-                    echo "Tag ${tag} créé et poussé sur GitHub"
                 }
             }
         }
