@@ -8,10 +8,8 @@ pipeline {
     environment {
         IMAGE_NAME = "quick-example"
         GITHUB_USER = 'jeremy-81'
-        GITHUB_TOKEN = credentials('github-token')
         IMAGE_TAG = "${BUILD_NUMBER}"
         FULL_IMAGE = "${IMAGE_NAME}:${IMAGE_TAG}"
-        GIT_CREDENTIALS_ID = 'github-token' 
         REPO_URL = 'https://github.com/jeremy-81/quick-example-of-testing-in-nodejs.git'
     }
 
@@ -38,7 +36,11 @@ pipeline {
 
         stage('Login to GitHub Container') {
             steps {
-                sh "echo ${GITHUB_TOKEN} | docker login ghcr.io -u ${GITHUB_USER} --password-stdin"
+                withCredentials([string(credentialsId: 'github-token', variable: 'GITHUB_TOKEN')]) {
+                    sh '''
+                      echo $GITHUB_TOKEN | docker login ghcr.io -u jeremy-81 --password-stdin
+                    '''
+                }
             }
         }
 
@@ -57,13 +59,9 @@ pipeline {
                     sh '''
                         git config user.name "jenkins"
                         git config user.email "jenkins@mail.fr"
+                        git tag ${tagName}
+                        git push https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/jeremy-81/quick-example-of-testing-in-nodejs.git ${tagName}
                     '''
-
-                    sh "git tag ${tagName}"
-
-                    sh """
-                        git push https://${GIT_CREDENTIALS_ID}@github.com/jeremy-81/quick-example-of-testing-in-nodejs.git ${tagName}
-                    """
                 }
             }
         }
