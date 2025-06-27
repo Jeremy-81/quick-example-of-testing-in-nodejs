@@ -6131,4 +6131,37 @@ Compression des objets:  33% (1/3)Compression des objets:  66% (2/3)Compressio
 Total 3 (delta 2), réutilisés 0 (delta 0), réutilisés du pack 0
 remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
 To github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git
-   eb3f144..bba976a  master -> m
+   eb3f144..bba976a  master -> master
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git push origin master [5Pcommit -m "nv"[9Padd .
+[?2004l[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git add .push origin master [5Pcommit -m "nv"
+[?2004l[master 81d9e42] nv
+ 2 files changed, 36 insertions(+), 5 deletions(-)
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git commit -m "nv"[9Padd .push origin master 
+[?2004lÉnumération des objets: 7, fait.
+Décompte des objets:  14% (1/7)Décompte des objets:  28% (2/7)Décompte des objets:  42% (3/7)Décompte des objets:  57% (4/7)Décompte des objets:  71% (5/7)Décompte des objets:  85% (6/7)Décompte des objets: 100% (7/7)Décompte des objets: 100% (7/7), fait.
+Compression par delta en utilisant jusqu'à 12 fils d'exécution
+Compression des objets:  25% (1/4)Compression des objets:  50% (2/4)Compression des objets:  75% (3/4)Compression des objets: 100% (4/4)Compression des objets: 100% (4/4), fait.
+Écriture des objets:  25% (1/4)Écriture des objets:  50% (2/4)Écriture des objets:  75% (3/4)Écriture des objets: 100% (4/4)Écriture des objets: 100% (4/4), 632 octets | 632.00 Kio/s, fait.
+Total 4 (delta 3), réutilisés 0 (delta 0), réutilisés du pack 0
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git
+   bba976a..81d9e42  master -> master
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git push origin master [5Pcommit -m "nv"[9Padd .
+[?2004l[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git add .push origin master [5Pcommit -m "nv"
+[?2004l[master f92c0f1] nv
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git commit -m "nv"[9Padd .push origin master 
+[?2004lÉnumération des objets: 5, fait.
+Décompte des objets:  20% (1/5)Décompte des objets:  40% (2/5)Décompte des objets:  60% (3/5)Décompte des objets:  80% (4/5)Décompte des objets: 100% (5/5)Décompte des objets: 100% (5/5), fait.
+Compression par delta en utilisant jusqu'à 12 fils d'exécution
+Compression des objets:  33% (1/3)Compression des objets:  66% (2/3)Compression des objets: 100% (3/3)Compression des objets: 100% (3/3), fait.
+Écriture des objets:  33% (1/3)Écriture des objets:  66% (2/3)Écriture des objets: 100% (3/3)Écriture des objets: 100% (3/3), 294 octets | 294.00 Kio/s, fait.
+Total 3 (delta 2), réutilisés 0 (delta 0), réutilisés du pack 0
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git
+   81d9e42..f92c0f1  master -> master
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git push origin master [5Pcommit -m "nv"[9Padd .
+[?2004l[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git add .push origin master [5Pcommit -m "nv"
+[?2004l[master 445a6d5] nv
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;
