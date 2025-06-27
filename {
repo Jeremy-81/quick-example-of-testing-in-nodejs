@@ -5780,4 +5780,38 @@ Compose can now delegate builds to bake for better performance.
 [?2004l[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git add .docker compose up -dbuildr build[2P down-[C[C[C[C[C[C[C[C[C[C[C[Cgit push origin master [4Pcommit -m "fix"[10Padd .commit -m "fix"
 [?2004l[master bcd3461] fix
  2 files changed, 1450 insertions(+), 1 deletion(-)
-[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git commit -m "fix"[10Padd .docker compose up -dbuildr build[2P down-[C[C[C[C
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git commit -m "fix"[10Padd .docker compose up -dbuildr build[2P down-[C[C[C[C[C[C[C[C[C[C[C[Cgit push origin master 
+[?2004lÉnumération des objets: 7, fait.
+Décompte des objets:  14% (1/7)Décompte des objets:  28% (2/7)Décompte des objets:  42% (3/7)Décompte des objets:  57% (4/7)Décompte des objets:  71% (5/7)Décompte des objets:  85% (6/7)Décompte des objets: 100% (7/7)Décompte des objets: 100% (7/7), fait.
+Compression par delta en utilisant jusqu'à 12 fils d'exécution
+Compression des objets:  25% (1/4)Compression des objets:  50% (2/4)Compression des objets:  75% (3/4)Compression des objets: 100% (4/4)Compression des objets: 100% (4/4), fait.
+Écriture des objets:  25% (1/4)Écriture des objets:  50% (2/4)Écriture des objets:  75% (3/4)Écriture des objets: 100% (4/4)Écriture des objets: 100% (4/4), 4.17 Kio | 711.00 Kio/s, fait.
+Total 4 (delta 2), réutilisés 0 (delta 0), réutilisés du pack 0
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git
+   846090c..bcd3461  master -> master
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git add .
+[?2004l[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git commit -m ""t"o"o"l"s"
+[?2004l[master 2515050] tools
+ 2 files changed, 31 insertions(+), 1 deletion(-)
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git push
+[?2004lÉnumération des objets: 7, fait.
+Décompte des objets:  14% (1/7)Décompte des objets:  28% (2/7)Décompte des objets:  42% (3/7)Décompte des objets:  57% (4/7)Décompte des objets:  71% (5/7)Décompte des objets:  85% (6/7)Décompte des objets: 100% (7/7)Décompte des objets: 100% (7/7), fait.
+Compression par delta en utilisant jusqu'à 12 fils d'exécution
+Compression des objets:  25% (1/4)Compression des objets:  50% (2/4)Compression des objets:  75% (3/4)Compression des objets: 100% (4/4)Compression des objets: 100% (4/4), fait.
+Écriture des objets:  25% (1/4)Écriture des objets:  50% (2/4)Écriture des objets:  75% (3/4)Écriture des objets: 100% (4/4)Écriture des objets: 100% (4/4), 696 octets | 696.00 Kio/s, fait.
+Total 4 (delta 3), réutilisés 0 (delta 0), réutilisés du pack 0
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git
+   bcd3461..2515050  master -> master
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git add .
+[?2004l[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git commit (-m[K[K[K-m ""t"a"g"[C
+[?2004l[master 65ad002] tag
+ 1 file changed, 16 insertions(+), 11 deletions(-)
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git push origin master 
+[?2004lÉnumération des objets: 5, fait.
+Décompte des objets:  20% (1/5)Décompte des objets:  40% (2/5)Décompte des objets:  60% (3/5)Décompte des objets:  80% (4/5)Décompte des objets: 100% (5/5)Décompte des objets: 100% (5/5), fait.
+Compression par delta en utilisant jusqu'à 12 fils d'exécution
+Compression des objets:  33% (1/3)Compression des objets:  66% (2/3)Compression des objets: 100% (3/3)Compression des objets: 100% (3/3), fait.
+Écriture des objets:  33% (1/3)Écriture des objets:  66% (2/3)Écriture des objets: 100% (3/3)Écriture des objets: 100% (3/3), 618 octets | 618.00 Kio/s, fait.
+Total 3 (delta 2), réutilisés 0 (delta 0), réutili

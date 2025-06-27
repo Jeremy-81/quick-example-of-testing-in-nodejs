@@ -8,7 +8,6 @@ pipeline {
 
     tools {
         nodejs "nodejs"
-        docker "Docker"
     }
 
     environment {
