@@ -48,7 +48,7 @@ pipeline {
 
         stage('Login to GitHub Container') {
             steps {
-                withCredentials([usernamePassword(credentialsId: 'github-token', usernameVariable: 'GITHUB_USER_CRED', passwordVariable: 'GITHUB_TOKEN')]) {
+                withCredentials([usernamePassword(credentialsId: 'token', usernameVariable: 'GITHUB_USER_CRED', passwordVariable: 'GITHUB_TOKEN')]) {
                     sh "echo \$GITHUB_TOKEN | docker login ghcr.io -u ${GITHUB_USER_CRED} --password-stdin"
                 }
             }
@@ -62,7 +62,7 @@ pipeline {
 
         stage('Tag Git') {
             steps {
-                withCredentials([usernamePassword(credentialsId: 'github-token', usernameVariable: 'GITHUB_USER_CRED', passwordVariable: 'GITHUB_TOKEN')]) {
+                withCredentials([usernamePassword(credentialsId: 'token', usernameVariable: 'GITHUB_USER_CRED', passwordVariable: 'GITHUB_TOKEN')]) {
                     script {
                         def tagName = "v${env.BUILD_NUMBER}"
                         echo "Création du tag Git : ${tagName}"
