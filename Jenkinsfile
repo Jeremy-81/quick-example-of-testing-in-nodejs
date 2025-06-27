@@ -13,9 +13,11 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
+         stage('Checkout branch') {
             steps {
-                checkout scm
+                checkout([$class: 'GitSCM', 
+                          branches: [[name: 'refs/heads/master']], 
+                          userRemoteConfigs: [[url: "${REPO_URL}"]]])
             }
         }
 

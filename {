@@ -6340,4 +6340,38 @@ remote:     Resolve the following violations before pushing again[K
 remote: 
 remote:     - Push cannot contain secrets[K
 remote: 
-remote:  
+remote:     [K
+remote:      (?) Learn how to resolve a blocked push[K
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push[K
+remote:     [K
+remote:     [K
+remote:       —— GitHub Personal Access Token ——————————————————————[K
+remote:        locations:[K
+remote:          - commit: 445a6d59696dff6902433cca92938cb7cfba0145[K
+remote:            path: Jenkinsfile:11[K
+remote:          - commit: 78d27a8997336e420e3da5110ccb016e07d35deb[K
+remote:            path: Jenkinsfile:11[K
+remote:     [K
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.[K
+remote:        https://github.com/Jeremy-81/quick-example-of-testing-in-nodejs/security/secret-scanning/unblock-secret/2z5ke2Q0cT4uAcgoE6buDyJMdne[K
+remote:     [K
+remote: 
+remote: 
+To github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git
+ [31m! [remote rejected][m master -> master (push declined due to repository rule violations)
+[31merror: impossible de pousser des références vers 'github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git'
+[m[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git push origin master 
+[?2004lÉnumération des objets: 14, fait.
+Décompte des objets:   7% (1/14)Décompte des objets:  14% (2/14)Décompte des objets:  21% (3/14)Décompte des objets:  28% (4/14)Décompte des objets:  35% (5/14)Décompte des objets:  42% (6/14)Décompte des objets:  50% (7/14)Décompte des objets:  57% (8/14)Décompte des objets:  64% (9/14)Décompte des objets:  71% (10/14)Décompte des objets:  78% (11/14)Décompte des objets:  85% (12/14)Décompte des objets:  92% (13/14)Décompte des objets: 100% (14/14)Décompte des objets: 100% (14/14), fait.
+Compression par delta en utilisant jusqu'à 12 fils d'exécution
+Compression des objets:   9% (1/11)Compression des objets:  18% (2/11)Compression des objets:  27% (3/11)Compression des objets:  36% (4/11)Compression des objets:  45% (5/11)Compression des objets:  54% (6/11)Compression des objets:  63% (7/11)Compression des objets:  72% (8/11)Compression des objets:  81% (9/11)Compression des objets:  90% (10/11)Compression des objets: 100% (11/11)Compression des objets: 100% (11/11), fait.
+Écriture des objets:   9% (1/11)Écriture des objets:  18% (2/11)Écriture des objets:  27% (3/11)Écriture des objets:  36% (4/11)Écriture des objets:  45% (5/11)Écriture des objets:  54% (6/11)Écriture des objets:  63% (7/11)Écriture des objets:  72% (8/11)Écriture des objets:  81% (9/11)Écriture des objets:  90% (10/11)Écriture des objets: 100% (11/11)Écriture des objets: 100% (11/11), 2.52 Kio | 516.00 Kio/s, fait.
+Total 11 (delta 8), réutilisés 0 (delta 0), réutilisés du pack 0
+remote: Resolving deltas:   0% (0/8)[Kremote: Resolving deltas:  12% (1/8)[Kremote: Resolving deltas:  25% (2/8)[Kremote: Resolving deltas:  37% (3/8)[Kremote: Resolving deltas:  50% (4/8)[Kremote: Resolving deltas:  62% (5/8)[Kremote: Resolving deltas:  75% (6/8)[Kremote: Resolving deltas:  87% (7/8)[Kremote: Resolving deltas: 100% (8/8)[Kremote: Resolving deltas: 100% (8/8), completed with 3 local objects.[K
+To github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git
+   f92c0f1..7d48304  master -> master
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git push origin master [3Pcommit -m "toto"add .[K
+[?2004l[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git add .push origin master [3Pcommit -m "toto"
+[?2004l[master f8ddcfe] toto
+ 2 files changed, 36 insertions(+), 2 deletions(-)
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;3
