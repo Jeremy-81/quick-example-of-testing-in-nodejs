@@ -6,15 +6,19 @@ pipeline {
     }
 
     environment {
-        IMAGE_NAME = "quick-example"
-        GITHUB_USER = 'jeremy-81'
-        GITHUB_TOKEN = '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'
+        IMAGE_NAME = "ghcr.io/jeremy-81/quick-example"
         IMAGE_TAG = "${BUILD_NUMBER}"
         FULL_IMAGE = "${IMAGE_NAME}:${IMAGE_TAG}"
         REPO_URL = 'https://github.com/jeremy-81/quick-example-of-testing-in-nodejs.git'
     }
 
     stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
         stage('Install dependencies') {
             steps {
                 sh 'npm install'
@@ -29,16 +33,16 @@ pipeline {
 
         stage('Build Docker image') {
             steps {
-                script {
-                    sh "docker build -t ${FULL_IMAGE} ."
-                }
+                sh "docker build -t ${FULL_IMAGE} ."
             }
         }
 
         stage('Login to GitHub Container') {
             steps {
-                withCredentials([usernamePassword(credentialsId: 'github-token', usernameVariable: 'GITHUB_USER_CRED', passwordVariable: 'GITHUB_TOKEN')]) {
-                    sh "echo \$GITHUB_TOKEN | docker login ghcr.io -u ${GITHUB_USER} --password-stdin"
+                withCredentials([usernamePassword(credentialsId: 'github-token', usernameVariable: 'GITHUB_USER', passwordVariable: 'GITHUB_TOKEN')]) {
+                    sh '''
+                        echo "$GITHUB_TOKEN" | docker login ghcr.io -u "$GITHUB_USER" --password-stdin
+                    '''
                 }
             }
         }
@@ -51,16 +55,18 @@ pipeline {
 
         stage('Tag Git') {
             steps {
-                script {
-                    def tagName = "v${env.BUILD_NUMBER}"
-                    echo "Création du tag Git : ${tagName}"
+                withCredentials([usernamePassword(credentialsId: 'github-token', usernameVariable: 'GITHUB_USER', passwordVariable: 'GITHUB_TOKEN')]) {
+                    script {
+                        def tagName = "v${env.BUILD_NUMBER}"
+                        echo "Création du tag Git : ${tagName}"
 
-                    sh '''
-                        git config user.name "jenkins"
-                        git config user.email "jenkins@mail.fr"
-                        git tag ${tagName}
-                        git push https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/jeremy-81/quick-example-of-testing-in-nodejs.git ${tagName}
-                    '''
+                        sh """
+                            git config user.name "jenkins"
+                            git config user.email "jenkins@mail.fr"
+                            git tag ${tagName}
+                            git push https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/jeremy-81/quick-example-of-testing-in-nodejs.git ${tagName}
+                        """
+                    }
                 }
             }
         }

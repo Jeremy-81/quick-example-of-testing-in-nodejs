@@ -6164,4 +6164,146 @@ To github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git
 [?2004l[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git add .push origin master [5Pcommit -m "nv"
 [?2004l[master 445a6d5] nv
  1 file changed, 1 insertion(+), 1 deletion(-)
-[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git commit -m "nv"[9Padd .push origin master 
+[?2004lÉnumération des objets: 5, fait.
+Décompte des objets:  20% (1/5)Décompte des objets:  40% (2/5)Décompte des objets:  60% (3/5)Décompte des objets:  80% (4/5)Décompte des objets: 100% (5/5)Décompte des objets: 100% (5/5), fait.
+Compression par delta en utilisant jusqu'à 12 fils d'exécution
+Compression des objets:  33% (1/3)Compression des objets:  66% (2/3)Compression des objets: 100% (3/3)Compression des objets: 100% (3/3), fait.
+Écriture des objets:  33% (1/3)Écriture des objets:  66% (2/3)Écriture des objets: 100% (3/3)Écriture des objets: 100% (3/3), 386 octets | 386.00 Kio/s, fait.
+Total 3 (delta 2), réutilisés 0 (delta 0), réutilisés du pack 0
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+remote: [1;31merror[m: GH013: Repository rule violations found for refs/heads/master.[K
+remote: 
+remote: - GITHUB PUSH PROTECTION[K
+remote:   —————————————————————————————————————————[K
+remote:     Resolve the following violations before pushing again[K
+remote: 
+remote:     - Push cannot contain secrets[K
+remote: 
+remote:     [K
+remote:      (?) Learn how to resolve a blocked push[K
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push[K
+remote:     [K
+remote:     [K
+remote:       —— GitHub Personal Access Token ——————————————————————[K
+remote:        locations:[K
+remote:          - commit: 445a6d59696dff6902433cca92938cb7cfba0145[K
+remote:            path: Jenkinsfile:11[K
+remote:     [K
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.[K
+remote:        https://github.com/Jeremy-81/quick-example-of-testing-in-nodejs/security/secret-scanning/unblock-secret/2z5ke2Q0cT4uAcgoE6buDyJMdne[K
+remote:     [K
+remote: 
+remote: 
+To github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git
+ [31m! [remote rejected][m master -> master (push declined due to repository rule violations)
+[31merror: impossible de pousser des références vers 'github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git'
+[m[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git push origin master [5Pcommit -m "nv"[9Padd .
+[?2004l[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git add .push origin master 
+[?2004lÉnumération des objets: 5, fait.
+Décompte des objets:  20% (1/5)Décompte des objets:  40% (2/5)Décompte des objets:  60% (3/5)Décompte des objets:  80% (4/5)Décompte des objets: 100% (5/5)Décompte des objets: 100% (5/5), fait.
+Compression par delta en utilisant jusqu'à 12 fils d'exécution
+Compression des objets:  33% (1/3)Compression des objets:  66% (2/3)Compression des objets: 100% (3/3)Compression des objets: 100% (3/3), fait.
+Écriture des objets:  33% (1/3)Écriture des objets:  66% (2/3)Écriture des objets: 100% (3/3)Écriture des objets: 100% (3/3), 386 octets | 386.00 Kio/s, fait.
+Total 3 (delta 2), réutilisés 0 (delta 0), réutilisés du pack 0
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+remote: [1;31merror[m: GH013: Repository rule violations found for refs/heads/master.[K
+remote: 
+remote: - GITHUB PUSH PROTECTION[K
+remote:   —————————————————————————————————————————[K
+remote:     Resolve the following violations before pushing again[K
+remote: 
+remote:     - Push cannot contain secrets[K
+remote: 
+remote:     [K
+remote:      (?) Learn how to resolve a blocked push[K
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push[K
+remote:     [K
+remote:     [K
+remote:       —— GitHub Personal Access Token ——————————————————————[K
+remote:        locations:[K
+remote:          - commit: 445a6d59696dff6902433cca92938cb7cfba0145[K
+remote:            path: Jenkinsfile:11[K
+remote:     [K
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.[K
+remote:        https://github.com/Jeremy-81/quick-example-of-testing-in-nodejs/security/secret-scanning/unblock-secret/2z5ke2Q0cT4uAcgoE6buDyJMdne[K
+remote:     [K
+remote: 
+remote: 
+To github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git
+ [31m! [remote rejected][m master -> master (push declined due to repository rule violations)
+[31merror: impossible de pousser des références vers 'github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git'
+[m[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git push origin master add .[Kpush origin master [5Pcommit -m "nv"
+[?2004l[master 78d27a8] nv
+ 2 files changed, 35 insertions(+), 2 deletions(-)
+[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git commit -m "nv"push origin master add .[Kpush origin master 
+[?2004lÉnumération des objets: 10, fait.
+Décompte des objets:  10% (1/10)Décompte des objets:  20% (2/10)Décompte des objets:  30% (3/10)Décompte des objets:  40% (4/10)Décompte des objets:  50% (5/10)Décompte des objets:  60% (6/10)Décompte des objets:  70% (7/10)Décompte des objets:  80% (8/10)Décompte des objets:  90% (9/10)Décompte des objets: 100% (10/10)Décompte des objets: 100% (10/10), fait.
+Compression par delta en utilisant jusqu'à 12 fils d'exécution
+Compression des objets:  14% (1/7)Compression des objets:  28% (2/7)Compression des objets:  42% (3/7)Compression des objets:  57% (4/7)Compression des objets:  71% (5/7)Compression des objets:  85% (6/7)Compression des objets: 100% (7/7)Compression des objets: 100% (7/7), fait.
+Écriture des objets:  14% (1/7)Écriture des objets:  28% (2/7)Écriture des objets:  42% (3/7)Écriture des objets:  57% (4/7)Écriture des objets:  71% (5/7)Écriture des objets:  85% (6/7)Écriture des objets: 100% (7/7)Écriture des objets: 100% (7/7), 908 octets | 908.00 Kio/s, fait.
+Total 7 (delta 5), réutilisés 0 (delta 0), réutilisés du pack 0
+remote: Resolving deltas:   0% (0/5)[Kremote: Resolving deltas:  20% (1/5)[Kremote: Resolving deltas:  40% (2/5)[Kremote: Resolving deltas:  60% (3/5)[Kremote: Resolving deltas:  80% (4/5)[Kremote: Resolving deltas: 100% (5/5)[Kremote: Resolving deltas: 100% (5/5), completed with 3 local objects.[K
+remote: [1;31merror[m: GH013: Repository rule violations found for refs/heads/master.[K
+remote: 
+remote: - GITHUB PUSH PROTECTION[K
+remote:   —————————————————————————————————————————[K
+remote:     Resolve the following violations before pushing again[K
+remote: 
+remote:     - Push cannot contain secrets[K
+remote: 
+remote:     [K
+remote:      (?) Learn how to resolve a blocked push[K
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push[K
+remote:     [K
+remote:     [K
+remote:       —— GitHub Personal Access Token ——————————————————————[K
+remote:        locations:[K
+remote:          - commit: 445a6d59696dff6902433cca92938cb7cfba0145[K
+remote:            path: Jenkinsfile:11[K
+remote:          - commit: 78d27a8997336e420e3da5110ccb016e07d35deb[K
+remote:            path: Jenkinsfile:11[K
+remote:     [K
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.[K
+remote:        https://github.com/Jeremy-81/quick-example-of-testing-in-nodejs/security/secret-scanning/unblock-secret/2z5ke2Q0cT4uAcgoE6buDyJMdne[K
+remote:     [K
+remote: 
+remote: 
+To github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git
+ [31m! [remote rejected][m master -> master (push declined due to repository rule violations)
+[31merror: impossible de pousser des références vers 'github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git'
+[m[?2004h]0;gerardo@gerard-CS: ~/Documents/Code/CiCD[01;32mgerardo@gerard-CS[00m:[01;34m~/Documents/Code/CiCD[00m$ git push origin master [1@-[1@-[1@f[C[1@o[1@r[1@c[1@e[1@ 
+[?2004lÉnumération des objets: 10, fait.
+Décompte des objets:  10% (1/10)Décompte des objets:  20% (2/10)Décompte des objets:  30% (3/10)Décompte des objets:  40% (4/10)Décompte des objets:  50% (5/10)Décompte des objets:  60% (6/10)Décompte des objets:  70% (7/10)Décompte des objets:  80% (8/10)Décompte des objets:  90% (9/10)Décompte des objets: 100% (10/10)Décompte des objets: 100% (10/10), fait.
+Compression par delta en utilisant jusqu'à 12 fils d'exécution
+Compression des objets:  14% (1/7)Compression des objets:  28% (2/7)Compression des objets:  42% (3/7)Compression des objets:  57% (4/7)Compression des objets:  71% (5/7)Compression des objets:  85% (6/7)Compression des objets: 100% (7/7)Compression des objets: 100% (7/7), fait.
+Écriture des objets:  14% (1/7)Écriture des objets:  28% (2/7)Écriture des objets:  42% (3/7)Écriture des objets:  57% (4/7)Écriture des objets:  71% (5/7)Écriture des objets:  85% (6/7)Écriture des objets: 100% (7/7)Écriture des objets: 100% (7/7), 908 octets | 908.00 Kio/s, fait.
+Total 7 (delta 5), réutilisés 0 (delta 0), réutilisés du pack 0
+remote: Resolving deltas:   0% (0/5)[Kremote: Resolving deltas:  20% (1/5)[Kremote: Resolving deltas:  40% (2/5)[Kremote: Resolving deltas:  60% (3/5)[Kremote: Resolving deltas:  80% (4/5)[Kremote: Resolving deltas: 100% (5/5)[Kremote: Resolving deltas: 100% (5/5), completed with 3 local objects.[K
+remote: [1;31merror[m: GH013: Repository rule violations found for refs/heads/master.[K
+remote: 
+remote: - GITHUB PUSH PROTECTION[K
+remote:   —————————————————————————————————————————[K
+remote:     Resolve the following violations before pushing again[K
+remote: 
+remote:     - Push cannot contain secrets[K
+remote: 
+remote:     [K
+remote:      (?) Learn how to resolve a blocked push[K
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push[K
+remote:     [K
+remote:     [K
+remote:       —— GitHub Personal Access Token ——————————————————————[K
+remote:        locations:[K
+remote:          - commit: 445a6d59696dff6902433cca92938cb7cfba0145[K
+remote:            path: Jenkinsfile:11[K
+remote:          - commit: 78d27a8997336e420e3da5110ccb016e07d35deb[K
+remote:            path: Jenkinsfile:11[K
+remote:     [K
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.[K
+remote:        https://github.com/Jeremy-81/quick-example-of-testing-in-nodejs/security/secret-scanning/unblock-secret/2z5ke2Q0cT4uAcgoE6buDyJMdne[K
+remote:     [K
+remote: 
+remote: 
+To github.com:Jeremy-81/quick-example-of-testing-in-nodejs.git
+ [31m! [remote rejected][m master -> master (push 
